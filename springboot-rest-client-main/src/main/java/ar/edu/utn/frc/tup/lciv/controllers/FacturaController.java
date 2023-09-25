@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class PingController {
+public class FacturaController {
 
     @Operation(
             summary = "Check healthy of the app",
@@ -30,8 +30,8 @@ public class PingController {
                             schema = @Schema(implementation = ErrorApi.class))
             )
     })
-    @GetMapping("/ping")
-    public String pong() {
-        return "pong";
+    @GetMapping("/factura")
+    public String f() {
+        return "f";
     }
 }
