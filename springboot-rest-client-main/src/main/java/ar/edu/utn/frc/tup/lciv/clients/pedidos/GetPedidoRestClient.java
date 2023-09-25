@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 public class GetPedidoRestClient {
     RestTemplate restTemplate = new RestTemplate();
 
-    String baseResourceUrl= "";
+    String baseResourceUrl= "https://my-json-server.typicode.com/2w1DenisAdrianCabrera109568/TPI-LabIV2023/pedido";
 
     public ResponseEntity<PedidoDTO[]>getPedido(){return restTemplate.getForEntity(baseResourceUrl, PedidoDTO[].class);}
 }

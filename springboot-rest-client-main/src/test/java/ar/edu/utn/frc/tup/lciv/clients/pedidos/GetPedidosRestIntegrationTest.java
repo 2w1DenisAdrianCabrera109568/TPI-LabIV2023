@@ -1,4 +1,4 @@
-package ar.edu.utn.frc.tup.lciv.clients.posts;
+package ar.edu.utn.frc.tup.lciv.clients.pedidos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,15 +10,18 @@ import java.util.Objects;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-class PostRestClientTest {
+class GetPedidosRestIntegrationTest {
 
 
     @SpyBean
-    private PostRestClient postRestClient;
+    private GetPedidoRestClient pedidosRestClient;
 
     @Test
     void getPostsIntegrationTest() {
-        ResponseEntity<Post[]> result = postRestClient.getPosts();
-        assertEquals(3, Objects.requireNonNull(result.getBody()).length);
+        ResponseEntity<PedidoDTO[]> result = pedidosRestClient.getPedido();
+        assertEquals(1, Objects.requireNonNull(result.getBody()).length);
+
     }
+
+
 }
