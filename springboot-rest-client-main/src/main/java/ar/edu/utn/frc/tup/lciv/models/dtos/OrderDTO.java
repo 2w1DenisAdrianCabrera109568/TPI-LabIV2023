@@ -9,8 +9,8 @@ import java.util.List;
 public class OrderDTO {
 
 
-        private int id;
-        private long status;
+        public long id;
+        public long status;
         private List<Detail> detail;
 
         @Data

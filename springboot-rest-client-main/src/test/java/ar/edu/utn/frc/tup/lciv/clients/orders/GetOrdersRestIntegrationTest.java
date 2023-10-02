@@ -1,4 +1,4 @@
-package ar.edu.utn.frc.tup.lciv.clients.pedidos;
+package ar.edu.utn.frc.tup.lciv.clients.orders;
 
 import ar.edu.utn.frc.tup.lciv.models.dtos.OrderDTO;
 import org.junit.jupiter.api.Test;
@@ -19,8 +19,14 @@ class GetOrdersRestIntegrationTest {
 
     @Test
     void getOrdersIntegrationTest() {
-        ResponseEntity<OrderDTO[]> result = ordersRestClient.getOrder();
+        ResponseEntity<OrderDTO[]> result = ordersRestClient.getOrders();
         assertEquals(2, Objects.requireNonNull(result.getBody()).length);
+
+    }
+    @Test
+    void getOrderIntegrationTest() {
+        ResponseEntity<OrderDTO> result = ordersRestClient.getOrder(1);
+        assertEquals(0, Objects.requireNonNull(result.getBody()).status);
 
     }
 
