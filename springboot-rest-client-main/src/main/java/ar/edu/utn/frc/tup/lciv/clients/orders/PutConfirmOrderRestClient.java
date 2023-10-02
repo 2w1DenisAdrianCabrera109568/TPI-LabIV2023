@@ -14,7 +14,8 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 public class PutConfirmOrderRestClient {
-     @Autowired
+    //
+    @Autowired
     private GetOrderRestClient getOrderRestClient;
 @Autowired
     private RestTemplate restTemplate;
