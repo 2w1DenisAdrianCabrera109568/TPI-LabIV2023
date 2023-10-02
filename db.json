@@ -26,19 +26,19 @@
     "detail": [
       {
         "product": {
-          "producto_id": 456,
+          "producto_id": 56,
           "nombre": "Nombre del Producto",
           "precioUnitario": "10.99"
         },
-        "amount": 3
+        "amount": 2
       },
       {
         "product": {
-          "producto_id": 789,
+          "producto_id": 89,
           "nombre": "Otro Producto",
           "precioUnitario": "5.99"
         },
-        "amount": 3
+        "amount": 4
       }
     ]
   }
