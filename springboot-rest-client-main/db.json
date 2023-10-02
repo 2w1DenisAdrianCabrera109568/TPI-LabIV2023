@@ -1,0 +1,46 @@
+{"pedidos":[{
+  "id": 1,
+  "status": 0,
+  "detail": [
+    {
+      "product": {
+        "producto_id": 456,
+        "nombre": "Nombre del Producto",
+        "precioUnitario": "10.99"
+      },
+      "amount": 3
+    },
+    {
+      "product": {
+        "producto_id": 789,
+        "nombre": "Otro Producto",
+        "precioUnitario": "5.99"
+      },
+      "amount": 3
+    }
+  ]
+},
+  {
+    "id": 2,
+    "status": 0,
+    "detail": [
+      {
+        "product": {
+          "producto_id": 456,
+          "nombre": "Nombre del Producto",
+          "precioUnitario": "10.99"
+        },
+        "amount": 3
+      },
+      {
+        "product": {
+          "producto_id": 789,
+          "nombre": "Otro Producto",
+          "precioUnitario": "5.99"
+        },
+        "amount": 3
+      }
+    ]
+  }
+]
+}
