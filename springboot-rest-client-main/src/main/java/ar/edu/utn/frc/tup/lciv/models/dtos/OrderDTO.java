@@ -10,7 +10,7 @@ public class OrderDTO {
 
 
         public long id;
-        public long status;
+        public long status; //0= pendiente 1=confirmado 2=cancelado
         private List<Detail> detail;
 
         @Data
