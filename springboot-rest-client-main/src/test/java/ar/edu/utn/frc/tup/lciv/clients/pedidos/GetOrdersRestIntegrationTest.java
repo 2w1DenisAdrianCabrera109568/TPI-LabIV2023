@@ -11,16 +11,16 @@ import java.util.Objects;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-class GetPedidosRestIntegrationTest {
+class GetOrdersRestIntegrationTest {
 
 
     @SpyBean
-    private GetOrderRestClient pedidosRestClient;
+    private GetOrderRestClient ordersRestClient;
 
     @Test
-    void getPostsIntegrationTest() {
-        ResponseEntity<OrderDTO[]> result = pedidosRestClient.getPedido();
-        assertEquals(1, Objects.requireNonNull(result.getBody()).length);
+    void getOrdersIntegrationTest() {
+        ResponseEntity<OrderDTO[]> result = ordersRestClient.getOrder();
+        assertEquals(2, Objects.requireNonNull(result.getBody()).length);
 
     }
 

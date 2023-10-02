@@ -2,6 +2,7 @@ package ar.edu.utn.frc.tup.lciv.models.dtos;
 import lombok.Data;
 
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Data
@@ -10,20 +11,21 @@ public class OrderDTO {
 
         private int id;
         private long status;
-        private Detail detail;
+        private List<Detail> detail;
 
         @Data
         public static class Detail {
 
+
+            private long amount;
             private List<Product> products;
         }
 
         @Data
         public static class Product {
 
-            private int product_id;
+            private long product_id;
             private String name;
-            private int amount;
-            private long price;
+            private BigDecimal price;
         }
 }
