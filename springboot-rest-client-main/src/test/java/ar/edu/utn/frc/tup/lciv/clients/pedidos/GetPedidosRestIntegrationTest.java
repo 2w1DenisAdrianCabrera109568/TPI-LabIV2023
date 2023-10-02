@@ -1,5 +1,6 @@
 package ar.edu.utn.frc.tup.lciv.clients.pedidos;
 
+import ar.edu.utn.frc.tup.lciv.models.dtos.OrderDTO;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.SpyBean;
@@ -18,7 +19,7 @@ class GetPedidosRestIntegrationTest {
 
     @Test
     void getPostsIntegrationTest() {
-        ResponseEntity<PedidoDTO[]> result = pedidosRestClient.getPedido();
+        ResponseEntity<OrderDTO[]> result = pedidosRestClient.getPedido();
         assertEquals(1, Objects.requireNonNull(result.getBody()).length);
 
     }

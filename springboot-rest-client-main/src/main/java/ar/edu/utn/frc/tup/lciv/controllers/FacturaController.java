@@ -1,6 +1,6 @@
 package ar.edu.utn.frc.tup.lciv.controllers;
 
-import ar.edu.utn.frc.tup.lciv.dtos.common.ErrorApi;
+import ar.edu.utn.frc.tup.lciv.models.dtos.common.ErrorApi;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
