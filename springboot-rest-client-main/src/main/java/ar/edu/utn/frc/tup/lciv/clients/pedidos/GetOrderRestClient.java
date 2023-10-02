@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
-public class GetPedidoRestClient {
+public class GetOrderRestClient {
     RestTemplate restTemplate = new RestTemplate();
 
-    String baseResourceUrl= "https://my-json-server.typicode.com/2w1DenisAdrianCabrera109568/TPI-LabIV2023/pedido";
+    String baseResourceUrl= "https://my-json-server.typicode.com/2w1DenisAdrianCabrera109568/TPI-LabIV2023/pedidos";
 
-    public ResponseEntity<OrderDTO[]>getPedido(){return restTemplate.getForEntity(baseResourceUrl, OrderDTO[].class);}
+    public ResponseEntity<OrderDTO[]>getOrder(){return restTemplate.getForEntity(baseResourceUrl, OrderDTO[].class);}
 }

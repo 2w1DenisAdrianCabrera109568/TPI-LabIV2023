@@ -15,7 +15,7 @@ class GetPedidosRestIntegrationTest {
 
 
     @SpyBean
-    private GetPedidoRestClient pedidosRestClient;
+    private GetOrderRestClient pedidosRestClient;
 
     @Test
     void getPostsIntegrationTest() {
